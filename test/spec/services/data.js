@@ -11,8 +11,8 @@ describe('Service: Data', function () {
     Data = _Data_;
   }));
 
-  it('should do something', function () {
-    expect(!!Data).toBe(true);
-  });
+//  it('should do something', function () {
+//    expect(!!Data).toBe(true);
+//  });
 
 });

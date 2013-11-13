@@ -11,9 +11,9 @@ describe('Filter: reverse', function () {
     reverse = $filter('reverse');
   }));
 
-  it('should return the input prefixed with "reverse filter:"', function () {
+  it('should return reverced string', function () {
     var text = 'angularjs';
-    expect(reverse(text)).toBe('reverse filter: ' + text);
+    expect(reverse(text)).toBe('sjralugna');
   });
 
 });
