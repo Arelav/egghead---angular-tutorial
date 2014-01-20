@@ -1,26 +1,36 @@
-<div class="hero-unit">
-    <h1>'Allo, 'Allo!</h1>
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">egghead</h3>
+</div>
 
-    <p>You now have</p>
-    <ul>
-        <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-    </ul>
-    <p>installed.</p>
-
-    <h3>Enjoy coding! - Yeoman</h3>
-
-    <label>main</label>
-    <input type="text" ng-model="data.message"/>
-    <h3>{{ data.message }}</h3>
-
-    <div ng-controller="FirstCtrl">
-        <label>first</label>
-        <input type="text" ng-model="data.message"/>
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+<form role="form">
+    <div class="form-group">
+        <label>main</label>
+        <input type="text" class="form-control" ng-model="data.message"/>
         <h3>{{ data.message }}</h3>
     </div>
-    <div ng-controller="SecondCtrl">
+
+    <div ng-controller="FirstCtrl" class="form-group">
+        <label>first</label>
+        <input type="text" class="form-control" ng-model="data.message"/>
+        <h3>{{ data.message }}</h3>
+    </div>
+    <div ng-controller="SecondCtrl" class="form-group">
         <label>second</label>
-        <input type="text" ng-model="data.message"/>
+        <input type="text" class="form-control" ng-model="data.message"/>
         <h3>{{ data.message|reverse }}</h3>
     </div>
+</form>
 </div>
